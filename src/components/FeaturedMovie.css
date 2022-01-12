@@ -43,6 +43,11 @@
     font-size: 20px;
     color: #999;
     max-width: 39%;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
 }
 
 .featured--buttons {
@@ -80,4 +85,33 @@
     margin-top: 15px;
     font-size: 18px;
     color: #999;
+}
+
+@media (max-width: 760px) {
+    .featured {
+        height: 90vh;
+    }
+    .featured--name {
+        font-size: 16px;
+    }
+    .featured--info {
+        font-size: 16px;
+    }
+    .featured--description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .featured--watchbutton,
+    .featured--mylistbutton {
+        font-size: 16px;
+    }
+    .featured--genres {
+        font-size: 14px;
+    }
+    .featured--points,
+    .featured--year,
+    .featured--seasons {
+        font-size: 16px;
+    }
 }
